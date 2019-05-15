@@ -16,7 +16,7 @@
         <!--Grid column-->
         <div class="col-md-6 mb-4">
 
-          <img src="{{ img }}" class="img-fluid" alt="">
+          <img src="{{ detail.img }}" class="img-fluid" alt="">
 
         </div>
         <!--Grid column-->
@@ -41,17 +41,17 @@
 
             <p class="lead">
               
-              <span>{{ recprix }} fr</span>
+              <span>{{ detail.recprix }} fr</span>
             </p>
 
-            <p class="lead font-weight-bold">{{ titre }}</p>
+            <p class="lead font-weight-bold">{{ detail.titre }}</p>
 
-            <p>{{ desc }}</p>
+            <p>{{ detail.desc }}</p>
 
             
               <!-- Default input -->
               
-              <button class="btn btn-primary btn-md my-0 p my-cart-btn" data-id="{{ key }}" data-name="{{ desc }}" data-summary="{{ titre }}" data-price="{{ recprix }}" data-quantity="1" data-image="{{ img }}">Add to cart
+              <button class="btn btn-primary btn-md my-0 p my-cart-btn" data-id="{{ detail.key }}" data-name="{{ detail.desc }}" data-summary="{{ detail.titre }}" data-price="{{ detail.recprix }}" data-quantity="1" data-image="{{ detail.img }}">Add to cart
                 <i class="fas fa-shopping-cart ml-1"></i>
               </button>
 
